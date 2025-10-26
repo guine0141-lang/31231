@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>$BNBITCH — Live</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Orbitron:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="./images/favicon.ico" sizes="any">
+  <link rel="stylesheet" href="./styles/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="top-left">
+      <img src="./images/logo.png" class="logo" alt="Logo">
+      <nav class="primary-nav">
+        <a class="social" href="https://t.me/bnbitch" target="_blank" aria-label="Telegram"><img src="images/telegram.svg" alt="Telegram"></a>
+        <a class="social" href="https://x.com/bnbitch_meme" target="_blank" aria-label="Twitter / X"><img src="images/x.svg" alt="X"></a>
+        <a href="https://pancakeswap.finance/swap?inputCurrency=BNB&outputCurrency=coming soon" class="btn btn-primary">Buy</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar left slide-in">
+      <div class="sidebar-title">Live Channels</div>
+      <ul class="channels">
+        <li class="channel" data-gif="/images/smoking.gif"><span class="dot"></span><img class="av" src="./images/smoking.gif" alt=""><span>CryptoBitch Channel</span><span class="viewers">7.5K</span></li>
+        <li class="channel" data-gif="/images/dogy.gif"><span class="dot"></span><img class="av" src="./images/dogy.gif" alt=""><span>Doge Game</span><span class="viewers">4.9K</span></li>
+        <li class="channel" data-gif="/images/CZ.gif"><span class="dot"></span><img class="av" src="./images/CZ.gif" alt=""><span>CZ</span><span class="viewers">3.1K</span></li>
+        <li class="channel" data-gif="/images/elon-mask.gif"><span class="dot"></span><img class="av" src="./images/elon-mask.gif" alt=""><span>Elon Mask</span><span class="viewers">7.8K</span></li>
+      </ul>
+    </aside>
+
+    <main class="center">
+      <div class="player card pop-in">
+        <div class="player-header">
+          <div class="row">
+            <span class="badge live"><span class="dot"></span> live</span>
+            <span class="title">$BNBITCH — Official Stream</span>
+            <!-- CA field + copy button -->
+<div class="ca-box">
+  <span class="ca-label">CA</span>
+  <input id="caField" class="ca-field" type="text" value="0x0000000000000000000000000000000000000000" readonly>
+  <button id="copyCA" class="btn sm">copy</button>
+</div>
+
+          </div>
+        </div>
+
+        <div class="video-wrap">
+          <img class="video" src="./images/smoking.gif" alt="GIF stream">
+          <div class="overlay-controls">
+            <a class="btn btn-success" id="Buy" href="https://pancakeswap.finance/swap?inputCurrency=BNB&outputCurrency=coming soon">Buy</a>
+          </div>
+        </div>
+
+        <div class="player-footer">
+          <div class="row gap">
+            <a class="btn btn-primary" href="https://pancakeswap.finance/swap?inputCurrency=BNB&outputCurrency=coming soon">Donate</a>
+          </div>
+          <div class="row gap">
+            <span class="hint">tip: click “Buy” to open the DEX</span>
+          </div>
+        </div>
+      </div>
+
+      <section id="how-to-Buy" class="card section observe">
+        <h2>How to Buy</h2>
+        <ol>
+          <li>Buy some BNB on an exchange of your choice (Binance, Coinbase, etc.).</li>
+          <li>Install Trust Wallet. Save your seed phrase. Send BNB to your wallet using your public address.</li>
+          <li>Use PancakeSwap. Paste the contract address and confirm the trade.</li>
+        </ol>
+      </section>
+
+      <section id="tokenomics" class="card section observe">
+        <h2>Tokenomics</h2>
+        <ul class="tokenomics">
+          <li><strong>Supply:</strong> 1,000,000,000 $BNBITCH</li>
+          <li><strong>Liquidity:</strong> 100% (locked)</li>
+          <li><strong>Tax/fees:</strong> 0%</li>
+        </ul>
+      </section>
+
+      <section id="donate" class="card section observe centerize">
+        <h2>Support the Stream</h2>
+        <p>Enjoy the content? Support the development and the memes!</p>
+        <div class="row gap">
+          <a class="btn btn-success" href="https://pancakeswap.finance/swap?inputCurrency=BNB&outputCurrency=coming soon">Buy MEME</a>
+          <a class="btn" href="https://pancakeswap.finance/swap?inputCurrency=BNB&outputCurrency=coming soon">Donate</a>
+        </div>
+      </section>
+    </main>
+
+    <aside class="sidebar right slide-in">
+      <div class="chat-head"></div>
+      <div class="chat-body" id="chat"></div>
+      <div class="chat-input">
+        <input id="chatInput" type="text" placeholder="Send a message" />
+        <button id="sendBtn" class="btn btn-primary sm">Chat</button>
+      </div>
+    </aside>
+  </div>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
