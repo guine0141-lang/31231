@@ -455,6 +455,7 @@ h1, h2, .btn, .title { font-family: 'Orbitron', sans-serif; letter-spacing: .5px
   overflow:hidden;
   text-overflow:ellipsis;
   height:32px;
+    width: 16.5rem;
 }
 
 .ca-field:focus{
